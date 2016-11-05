@@ -1235,7 +1235,6 @@ body.fsnav .fullscreen-nav-trigger .fullscreen-nav-trigger-inner::after {
 		display: block;
 		font-weight: 600;
 		float: left;
-		background-color: #666;
 		position: relative;
 		width: 100%;
 		margin: 0 0 -10px;
@@ -1245,7 +1244,6 @@ body.fsnav .fullscreen-nav-trigger .fullscreen-nav-trigger-inner::after {
 		-ms-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 		border-radius: 4px;
-		 background: rgba(255, 255, 255, 0.2);
 		}
 
 	#main-header {
@@ -3215,7 +3213,7 @@ ul.footer-links {
 	color: #777;
 	border-top: 1px solid #333;
 	margin-top: 65px;
-	text-align: center;
+	text-align: left;
 	padding: 40px 0;
 	display: inline-block;
 	width: 100%;
@@ -6002,7 +6000,7 @@ html.fp-enabled,
     top: -2px;
     color: #fff;
     font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
+    font-family: "Lato", helvetica, arial, sans-serif;
     white-space: nowrap;
     max-width: 220px;
     overflow: hidden;
@@ -10222,7 +10220,7 @@ body .notification strong { border: none; }
 	#blogSlider .meta-tags span, #posts-nav, .tags a, .testimonial-author span, .testimonial p,  .background.parallax .testimonial p, .viewer .close,
 	.rsDefaultInv .rsThumb, ul.top-bar-menu li, .fullscreen-nav-container ul, .photo-section-btn
 	{ 
-		font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		letter-spacing: 0.5px;
 		text-transform: none;
 	}
@@ -11476,6 +11474,8 @@ body.loaded #header-container.moz-fix { opacity: 1; }
 	.gray, .gray-bg { background: #555;}
 	.purple, .purple-bg { background: #917ae9; }
 	.olive, .olive-bg { background: #b3c211; }
+	.turqoise-tbm, .turquoise-tbm-bg { background: #32BCBC;}
+
 
 	.bg1 { background-image: url("../images/bg/squared_metal.png"); }
 	.bg2 { background-image: url("../images/bg/retina_wood.png"); }
