@@ -142,7 +142,11 @@ body #main-header {
 	margin: 25px 0;
 }
 
-.header { margin: 30px 0 28px 0; }
+#logo img {
+	float: left;
+}
+
+.header { margin: 30px 0 .3em 0; }
 
 .basic #main-header .header,
 #main-header .header { margin: 0; }
@@ -466,6 +470,10 @@ body.uppercase .menu > li > a {
 }
 
 .menu li { list-style: none; position: relative;}
+
+#footer .menu li {
+	float: right;
+}
 
 .mega ul { padding: 0; }
 
@@ -989,6 +997,20 @@ body .menu.alt > li > a {
 	transition: all 0.2s ease-in-out;
 }
 
+/* Hover line Footer Nav */
+#footer .menu.alt2 li a:before {
+	/*height: 2px;*/
+	width: 0;
+	position: absolute;
+	margin:0 auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: "";
+	background-color: #666;
+	transition: all 0.2s ease-in-out;
+}
+
 .menu.alt2 li:hover ul:before,
 .menu.alt2 li a.current:before,
 .menu.alt2 li:hover > a:before {
@@ -1222,6 +1244,7 @@ body.fsnav .fullscreen-nav-trigger .fullscreen-nav-trigger-inner::after {
 ------------------------------------- */
 .menu-responsive,
 #jPanelMenu-menu { display: none; }
+
 
 @media only screen and (max-width: 991px) {
 
@@ -2225,9 +2248,7 @@ body .gallery-icon:before {
 .basic-carousel .owl-dots { margin-top: 15px;}
 
 .projects.style-5 a .overlay:after {
-    background: linear-gradient(to top, rgba(50,50,50, 0.9) 0%, rgba(50,50, 50, 0.7) 20%, rgba(50,50,50,0.1) 100%);
-    background: -webkit-linear-gradient(to top, rgba(50,50,50, 0.9) 0%, rgba(50,50, 50, 0.7) 20%, rgba(50,50,50,0.1) 100%);
-	opacity: 1;
+    background: #32BCBC;
 }
 
 .projects.style-5 a .overlay-content {
@@ -2625,6 +2646,16 @@ body .counter-boxes-inside-parallax .counter-box-icon i,
 	color: #333;
 }
 
+.resume-table strong a {
+	color: #333;
+}
+
+.resume-table strong a:hover {
+	color: #00C3C3;
+}
+
+
+
 .resume-table strong:before {
 	display:block;
 	width: 20px;
@@ -2877,8 +2908,9 @@ body #backtotop a { color: #fff; }
 
 /* Edge Icon Box */
 .icon-box-3 h4 {
-	font-size: 18px;
-	font-weight: 600;
+	font-size: 22px;
+	line-height: 30px;
+	/*font-weight: 600;*/
 }
 
 .icon-box-3 i {
@@ -3109,20 +3141,20 @@ a.icon-box-4:hover i { color: #fff; }
 	z-index: 15;
 	transition: opacity 0.3s ease-in-out, margin 0.3s ease-in-out;
 	opacity: 0;
-  	content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    margin-left:100%;
-    margin-top:-51%;
-    border-left: 500px solid transparent;
-    border-top: 500px solid #fff;
-    transform: scale(2);
+	content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left:100%;
+  margin-top:-51%;
+  border-left: 500px solid transparent;
+  border-top: 500px solid #fff;
+  transform: scale(2);
 }
 
 .icon-box-4:hover:after {
 	opacity: 0.06;
-    margin-left: 0;
+   margin-left: 0;
 }
 
 
@@ -3130,9 +3162,23 @@ a.icon-box-4:hover i { color: #fff; }
 /* Footer
 ------------------------------------- */
 #footer {
-	background-color: #202020;
-	padding: 65px 0 0 0;
-	color: #999;
+	background-color: #373D3E;
+	padding: 0 30px 0 30px;
+	color: #fff;
+}
+
+#footer p a {
+	color: rgba(255, 255, 255, .8);
+	font-size: 17px;
+}
+
+#footer li a {
+	float: right;
+	color: rgba(255, 255, 255, .8);
+}
+
+#footer li a:hover {
+	color: rgba(255, 255, 255, 1);
 }
 
 #footer.alt { padding: 0;}
@@ -5751,7 +5797,19 @@ body .tags a { letter-spacing: 1px; text-transform: uppercase; }
 	margin-bottom: 16px;
 }
 
-.sidebar-textbox span { color: #666; display: inline-block; }
+.sidebar-textbox span { 
+	color: rgba(255,255,255,0.80);
+	display: inline-block; 
+	opacity: 0.8;
+	font-family: Lato-Regular;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.image-edge.dark .sidebar-textbox span:hover {
+	color: #32BCBC;
+}
+
 .sidebar-textbox.color span { color: #fff; }
 
 .sidebar-textbox ul.contact-details {
@@ -8131,13 +8189,16 @@ img.mfp-img {
 .parallax-content.wide h2 {
 	max-width: 50%;
 	font-size: 90px;
-	letter-spacing: -4px;
+	/*letter-spacing: -4px;*/
+	font-weight: 300;
 }
 
 .parallax-content.wide h3 {
 	font-size: 36px;
 	line-height: 42px;
-	letter-spacing: 0
+	/*letter-spacing: 0;*/
+	font-weight: 300;
+
 }
 
 .parallax-content.wide.left {
@@ -10558,6 +10619,7 @@ body .notification strong { border: none; }
 	.parallax-content.wide h2 {
 		max-width: 70%;
 		font-size: 80px;
+		font-weight: 300;
 	}
 
 	.fullscreen.video .parallax-content h2 {
@@ -11260,6 +11322,10 @@ body .notification strong { border: none; }
 	.rev_slider .tp-caption, .rev_slider .caption { padding-top: 140px !important; }
 }
 
+@media (min-width: 992px) {
+	.none {
+		display: none;
+	}
 
 /* ------------------------------------------------------------------- */
 /* Page Preloader
