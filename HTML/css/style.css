@@ -1159,11 +1159,12 @@ body.fsnav .fullscreen-nav-container ul ul {
 	border: 0;
 	margin: 0;
 	overflow: visible;
-	position: absolute;
+	position: fixed;
 	right: 15px;
 	z-index: 999999;
 	transform: translateY(calc(-51% + 3px));
 	-ms-transform: translateY(-50%);
+
 }
 
 #main-header.cloned .fullscreen-nav-trigger { transform: translateY(calc(-51% - 2px)); -ms-transform: translateY(-50%); }
@@ -2899,7 +2900,7 @@ body #backtotop a { color: #fff; }
 ------------------------------------- */
 .icon-box-3 {
 	text-align: left;
-	padding-left: 90px;
+	padding-left: 70px;
 	position: relative;
 	width: 100%;
 	display: inline-block;
@@ -3652,7 +3653,7 @@ body .testimonial-author span {
 #header-container.basic #titlebar.centered h2 {
 	color: #333;
 	font-size: 46px;
-	font-weight: 600;
+	font-weight: 300;
 	line-height: 42px;
 	margin-top: 5px;
 	letter-spacing: 0;
@@ -3898,10 +3899,17 @@ body #breadcrumbs {
 }
 
 .project-details h4 {
-	margin-top: 0;
+	/* Original Code */
+	/*margin-top: 0;
 	margin-bottom: 30px;
 	font-size: 22px;
-	font-weight: 500;
+	font-weight: 500;*/
+
+	/* Discovery: From Sketch Designs */
+	font-family: Lato-Black;
+	font-size: 26px;
+	color: #373D3E;
+	letter-spacing: 0.43px;
 }
 
 .project-details h4.with-border { padding-bottom: 23px; }
@@ -3962,6 +3970,14 @@ body #breadcrumbs {
 
 .project-nav li:first-child { margin-right: 4%; }
 .project-nav li a { width: 100%; }
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
 
 
 /* ---------------------------------- */
@@ -10335,7 +10351,16 @@ body .notification strong { border: none; }
 	.about-me-title { line-height: 38px; padding-right: 50px; }
 
 	h2.about-me-title,
-	h2.section-title { letter-spacing: 0; line-height: 42px; padding-right: 50px; }
+	h2.section-title { 
+		/*Original CSS*/
+		/*letter-spacing: 0; line-height: 42px; padding-right: 50px; */
+		
+		/* The challenges: From Sketch Design */
+		font-family: Lato-Black;
+		font-size: 26px;
+		color: #FFFFFF;
+		letter-spacing: 0.43px;
+	}
 
 
 	/* Section Background */
@@ -11119,9 +11144,9 @@ body .notification strong { border: none; }
 	    letter-spacing: 0px !important
 	}
 
-	.fullscreen-nav-container ul li { font-size: 22px; line-height: 26px; padding: 6px 0;}
-	.fullscreen-nav-trigger { left: 0; right: 0; margin: 0 auto; text-align: center;}
-	.fsnav .fullscreen-nav-trigger { left: initial; top: -50px; right: 30px; text-align: right; display: inline-block;}
+	/*.fullscreen-nav-container ul li { font-size: 22px; line-height: 26px; padding: 6px 0;}*/
+	/*.fullscreen-nav-trigger { left: 0; right: 0; margin: 0 auto; text-align: center;}*/
+	/*.fsnav .fullscreen-nav-trigger { left: initial; top: -50px; right: 30px; text-align: right; display: inline-block;}*/
 
 	.edge-bg { height:350px; }
 	.glyph {  width: 100%; }
