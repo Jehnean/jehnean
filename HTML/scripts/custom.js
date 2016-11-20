@@ -263,8 +263,13 @@ $(document).ready(function(){
 		var headerHeight = $("#main-header").height();
 		$('.fullscreen-nav-trigger').css('margin-top', headerHeight/2);
 	}
-		
-
+	
+	// close fullscreen nav when used, copied code from above line 255
+	$('.mobileNav a').on('click', function(){
+		$(this).toggleClass('is-active');
+		$('#main-header').not('#main-header.cloned').toggleClass('nav-active');
+		$('body').toggleClass('fsnav');
+	});
 
 	/*----------------------------------------------------*/
 	/*  Flexslider

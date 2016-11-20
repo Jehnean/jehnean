@@ -135,7 +135,6 @@ body #main-header {
 	position: relative;
 }
 
-
 /* Logo */
 #logo {
 	display: inline-block;
@@ -1247,7 +1246,11 @@ body.fsnav .fullscreen-nav-trigger .fullscreen-nav-trigger-inner::after {
 #jPanelMenu-menu { display: none; }
 
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
+	#main-header {
+	position: fixed;
+	background-color: rgba(34, 34, 34, 0.97); 
+	}
 
 	.menu {max-height: none;}
 	#responsive { display: none; }
@@ -8120,6 +8123,7 @@ img.mfp-img {
     background-position:50% 50%;
     /* ie8- graceful degradation */
     background-position:50% 50%\9 !important;
+    background-color: #32BCBC;
 }
 
 /* fullscreen setup */
@@ -10353,13 +10357,13 @@ body .notification strong { border: none; }
 	h2.about-me-title,
 	h2.section-title { 
 		/*Original CSS*/
-		/*letter-spacing: 0; line-height: 42px; padding-right: 50px; */
+		letter-spacing: 0; line-height: 42px; padding-right: 50px; 
 		
 		/* The challenges: From Sketch Design */
-		font-family: Lato-Black;
+		/*font-family: Lato-Black;
 		font-size: 26px;
 		color: #FFFFFF;
-		letter-spacing: 0.43px;
+		letter-spacing: 0.43px;*/
 	}
 
 
@@ -10371,7 +10375,10 @@ body .notification strong { border: none; }
 	#footer h5,
 	#footer h4,
 	#footer h3,
-	.menu > li > a { text-transform: uppercase; letter-spacing: 1px;}
+	.menu > li > a { 
+		text-transform: uppercase; 
+		letter-spacing: 1px;
+	}
 	
 	mark.color {
 	  color: #fff;
@@ -11351,6 +11358,11 @@ body .notification strong { border: none; }
 	.none {
 		display: none;
 	}
+}
+
+
+
+
 
 /* ------------------------------------------------------------------- */
 /* Page Preloader
