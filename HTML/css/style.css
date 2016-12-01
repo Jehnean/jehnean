@@ -92,7 +92,7 @@
 @import url("bootstrap.css");
 @import url("icons.css");
 @import url("revolutionslider.css");
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700,300");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,900");
 
 
 /* ------------------------------------------------------------------- */
@@ -3898,7 +3898,7 @@ body #breadcrumbs {
 	font-weight: 500;*/
 
 	/* Discovery: From Sketch Designs */
-	font-family: Lato-Black;
+	font-family: "Roboto", helvetica, arial, sans-serif;
 	font-size: 26px;
 	color: #373D3E;
 	letter-spacing: 0.43px;
@@ -5812,7 +5812,7 @@ body .tags a { letter-spacing: 1px; text-transform: uppercase; }
 	color: rgba(255,255,255,0.80);
 	display: inline-block; 
 	opacity: 0.8;
-	font-family: Lato-Regular;
+	font-family: "Roboto", helvetica, arial, sans-serif;
 	font-size: 16px;
 	line-height: 30px;
 }
@@ -6076,7 +6076,7 @@ html.fp-enabled,
     top: -2px;
     color: #fff;
     font-size: 14px;
-    font-family: "Lato", helvetica, arial, sans-serif;
+    font-family: "Roboto", helvetica, arial, sans-serif;
     white-space: nowrap;
     max-width: 220px;
     overflow: hidden;
@@ -10283,7 +10283,7 @@ body .notification strong { border: none; }
 	---------------------------------- */
 	body, input[type="text"], input[type="password"], input[type="email"], textarea,
 	#tiptip_holder, .tp-caption .caption-text, select, .R_title.ghost, .background.parallax p {
-		font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Roboto", helvetica, arial, sans-serif;
 		text-transform: none;
 	}
 
@@ -10300,7 +10300,7 @@ body .notification strong { border: none; }
 	#blogSlider .meta-tags span, #posts-nav, .tags a, .testimonial-author span, .testimonial p,  .background.parallax .testimonial p, .viewer .close,
 	.rsDefaultInv .rsThumb, ul.top-bar-menu li, .fullscreen-nav-container ul, .photo-section-btn
 	{ 
-		font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Roboto", helvetica, arial, sans-serif;
 		letter-spacing: 0.5px;
 		text-transform: none;
 	}
@@ -10367,7 +10367,7 @@ body .notification strong { border: none; }
 		letter-spacing: 0; line-height: 42px; padding-right: 50px; 
 		
 		/* The challenges: From Sketch Design */
-		/*font-family: Lato-Black;
+		/*font-family: "Roboto", helvetica, arial, sans-serif;
 		font-size: 26px;
 		color: #FFFFFF;
 		letter-spacing: 0.43px;*/
